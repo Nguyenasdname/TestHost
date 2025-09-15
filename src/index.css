@@ -2,77 +2,9 @@
 
 body {
     background-color: black;
+    overflow: hidden;
 }
 
-@keyframes flyNorth {
-    0% {
-        transform: translate(-50%, -50%) scale(0.5);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translate(-50%, -250%) scale(1);
-        opacity: 1;
-    }
+.glow {
+    filter: drop-shadow(0 0 10px #facc15);
 }
-
-@keyframes flySouth {
-    0% {
-        transform: translate(-50%, -50%) scale(0.5);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translate(-50%, 150%) scale(1);
-        opacity: 1;
-    }
-}
-
-@keyframes flyEast {
-    0% {
-        transform: translate(-50%, -50%) scale(0.5);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translate(150%, -50%) scale(1);
-        opacity: 1;
-    }
-}
-
-@keyframes flyWest {
-    0% {
-        transform: translate(-50%, -50%) scale(0.5);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translate(-250%, -50%) scale(1);
-        opacity: 1;
-    }
-}
-
-/* Tương tự cho NE, NW, SE, SW */
-
-.animate-flyNorth {
-    animation: flyNorth 3.5s ease-out forwards;
-    animation-delay: 1.5s;
-
-}
-
-.animate-flySouth {
-    animation: flySouth 3.5s ease-out forwards;
-    animation-delay: 3s;
-}
-
-.animate-flyEast {
-    animation: flyEast 3.5s ease-out forwards;
-    animation-delay: 3s;
-}
-
-.animate-flyWest {
-    animation: flyWest 3.5s ease-out forwards;
-    animation-delay: 3s;
-}
-
-/* ... */

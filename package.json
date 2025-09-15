@@ -17,6 +17,9 @@
     "framer-motion": "^12.23.12",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "react-router-dom": "^7.9.1",
+    "router": "^2.2.0",
+    "routes": "^2.1.0",
     "tailwindcss": "^4.1.13"
   },
   "devDependencies": {

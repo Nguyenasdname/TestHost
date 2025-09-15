@@ -68,6 +68,23 @@ const animateES: Variants = {
     }
 };
 
+const textPopUp: Variants = {
+    initial: {
+        opacity: 0,
+        scale: 2,
+        y: -200
+    },
+    animate: {
+        opacity: 1,
+        scale: 1,
+        y: 0,
+        transition: {
+            duration: 1.2,
+            ease: "easeOut"
+        }
+    }
+};
+
 export const variants = {
     animateN,
     animateS,
@@ -76,5 +93,6 @@ export const variants = {
     animateWN,
     animateEN,
     animateWS,
-    animateES
+    animateES,
+    textPopUp
 };
